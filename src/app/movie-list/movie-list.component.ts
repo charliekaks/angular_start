@@ -32,13 +32,13 @@ export class MovieListComponent implements OnInit {
     duration : "3h 2min",
     date : "22/4/2019",
     description : "After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.",
-    image : "../assets/imagesavengers.jpg/"
+    image : "../assets/images/avengers.jpg/"
   },
   {
     name : "The Dark Knight",
     duration : "2h 32min",
     date : "14//2018",
-    decription : "After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who wants to bring all the heroes down to his level.",
+    description : "After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who wants to bring all the heroes down to his level.",
     image : "../assets/images/batman.jpg"
   }
 ]

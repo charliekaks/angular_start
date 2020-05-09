@@ -1,2 +1,5 @@
- 
-<app-movie-item [movies] = "moviesList"  (clickMe)="handleClickEvent($event)"></app-movie-item>
+<div class="row">
+  
+        <app-movie-item class="col-md-3"  *ngFor="let movie of moviesList" [movies] = "movie"  (clickMe)="handleClickEvent($event)"></app-movie-item>
+
+  </div>

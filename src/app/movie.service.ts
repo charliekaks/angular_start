@@ -7,9 +7,13 @@ export class MovieService {
   getMovies(){
     return moviesList;
   }
+  getMovie(id:number){
+    return moviesList.find(movie => movie.id === id)
+  }
   constructor() { }
 }
 const moviesList = [{
+  id : 1,
   name : "Black Panther",
   duration : "2hrs 30 min",
   date: '9/12/2018',
@@ -17,6 +21,7 @@ const moviesList = [{
   image : "../assets/images/black_panther.jpg" 
 },
 {
+  id :2,
   name : "The IrishMan",
   duration : "3hrs 15min",
   date : "27/9/2019",
@@ -24,6 +29,7 @@ const moviesList = [{
   image : "../assets/images/irishman.jpg"
 },
 {
+  id : 3,
   name : "Spider-Man: Into the Spider-Verse",
   duration : " 1h 56min",
   date : "1/12/2018",
@@ -31,6 +37,7 @@ const moviesList = [{
   image : "../assets/images/spider.jpg"
 },
 {
+  id : 4,
   name : "Avengers: Endgame",
   duration : "3h 2min",
   date : "22/4/2019",
@@ -38,6 +45,7 @@ const moviesList = [{
   image : "../assets/images/avengers.jpg/"
 },
 {
+  id : 5,
   name : "The Dark Knight",
   duration : "2h 32min",
   date : "14//2018",

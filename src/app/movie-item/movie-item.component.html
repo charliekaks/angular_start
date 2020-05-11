@@ -1,5 +1,5 @@
 
-<div class="card" style="width: 18rem;">
+<div [routerLink] = "['/movies' , movies.id]" class="card" style="width: 18rem;">
     <img src={{movies.image}} class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{movies.name}}</h5>
@@ -8,7 +8,6 @@
         {{movies.date}}
         <br><hr>
         {{movies.description}}
-        <!-- <button (click)="clickButton()" class="btn btn-primary">Click Me</button> -->
       </p>
     </div>
   </div>

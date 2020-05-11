@@ -9,13 +9,17 @@ import { MovieService } from './movie.service';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
+import { MovieReviewsComponent } from './movie-reviews/movie-reviews.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieListComponent,
     MovieItemComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    MovieReviewsComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,

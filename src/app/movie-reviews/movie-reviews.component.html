@@ -1,2 +1,44 @@
 <p>movie-reviews works!</p>
+
+<!-- Material form contact -->
+<div class="card">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Contact us</strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="#!"  #reviewForm= "ngForm" (ngSubmit) = "reviewSubmit(reviewForm.value)" >
+
+            <!-- Name -->
+            <div class="md-form mt-3">
+                <input type="text" (ngModel) = "userName" name = "username" id="materialContactFormName" class="form-control">
+                <label for="materialContactFormName">Name</label>
+            </div>
+
+            <!-- E-mail -->
+            <div class="md-form">
+                <input type="email" (ngModel) = "userEmail"  name = "userEmail" id="materialContactFormEmail" class="form-control">
+                <label for="materialContactFormEmail">E-mail</label>
+            </div>
+
+            <!--Review-->
+            <div class="md-form">
+                <textarea id="materialContactFormReview" (ngModel) = "review" name = "review" class="form-control md-textarea" rows="3"></textarea>
+                <label for="materialContactFormReview">Review</label>
+            </div>
+
+            <!-- Send button -->
+            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+<!-- Material form contact -->
 <button class="btn btn-primary" (click)= "cancel()">cancel</button>

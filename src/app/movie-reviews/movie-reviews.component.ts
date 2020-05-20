@@ -16,6 +16,10 @@ export class MovieReviewsComponent implements OnInit {
   cancel(){
     this.route.navigate(['/movies'])
   }
+  userEmail = ""
+  userName = ""
+  review = ""
+  reviewSubmit(){}
 
   ngOnInit(): void {
   }

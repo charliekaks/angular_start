@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Movie } from '../movie.model';
 
 @Component({
   selector: 'app-movie-item',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./movie-item.component.css']
 })
 export class MovieItemComponent implements OnInit {
-  @Input() movies : any;
+  @Input() movies : Movie;
   @Output() clickMe = new EventEmitter();
 
   clickButton(){

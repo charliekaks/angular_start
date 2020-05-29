@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Movie } from './movie.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class MovieService {
   }
   constructor() { }
 }
-const moviesList = [{
+const moviesList : Movie[] = [{
   id : 1,
   name : "Black Panther",
   duration : "2hrs 30 min",

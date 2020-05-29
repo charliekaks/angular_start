@@ -11,24 +11,24 @@
     <div class="card-body px-lg-5 pt-0">
 
         <!-- Form -->
-        <form class="text-center" style="color: #757575;" action="#!"  #reviewForm= "ngForm" (ngSubmit) = "reviewSubmit(reviewForm.value)" >
+        <form class="text-center" style="color: #757575;" action="#!"  #reviewForm = "ngForm" (ngSubmit) = "reviewSubmit(reviewForm.value)" >
 
             <!-- Name -->
             <div class="md-form mt-3">
+                <label for="userName">Name</label>
                 <input type="text" (ngModel) = "userName" name = "username" id="materialContactFormName" class="form-control">
-                <label for="materialContactFormName">Name</label>
             </div>
 
             <!-- E-mail -->
             <div class="md-form">
+                <label for="userEmail">E-mail</label>
                 <input type="email" (ngModel) = "userEmail"  name = "userEmail" id="materialContactFormEmail" class="form-control">
-                <label for="materialContactFormEmail">E-mail</label>
             </div>
 
             <!--Review-->
             <div class="md-form">
+                <label for="review">Review</label>
                 <textarea id="materialContactFormReview" (ngModel) = "review" name = "review" class="form-control md-textarea" rows="3"></textarea>
-                <label for="materialContactFormReview">Review</label>
             </div>
 
             <!-- Send button -->

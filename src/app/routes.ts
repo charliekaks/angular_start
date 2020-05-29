@@ -10,5 +10,6 @@ export const appRoutes : Routes = [
     {path : "movies" , component : MovieListComponent},
     {path : "movies/:id" , component : MovieDetailsComponent, canActivate : [MovieRouteActivateService]},
     {path : "error" , component : ErrorPageComponent},
+    {path : "review", component : MovieReviewsComponent},
     {path : '' , redirectTo : "/movies" , pathMatch : "full"}
 ]

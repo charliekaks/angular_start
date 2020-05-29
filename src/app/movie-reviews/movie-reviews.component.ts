@@ -19,7 +19,9 @@ export class MovieReviewsComponent implements OnInit {
   userEmail = ""
   userName = ""
   review = ""
-  reviewSubmit(){}
+  reviewSubmit(formValues){
+    console.log(formValues)
+  }
 
   ngOnInit(): void {
   }
